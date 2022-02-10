@@ -108,7 +108,7 @@ return (
        <input 
        className="search" 
        type="text" 
-       placeholder="Search You Favorite Pokemon.." 
+       placeholder="Search You Favorite Pokemon..." 
        onKeyPress={(ev)=> {
            if(ev.key === "Enter") {
                ev.preventDefault();
