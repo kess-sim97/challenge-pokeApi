@@ -1,0 +1,9 @@
+.pokemon-container{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2,1fr);
+    padding: 3rem;
+    background-color: rgb(251, 215, 67);
+    justify-items: center;
+
+}

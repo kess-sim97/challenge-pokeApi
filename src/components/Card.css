@@ -1,0 +1,293 @@
+.card-container{
+    width:500px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    transition: 0.3s;
+    margin-bottom: 3%;
+    background-color: #ffffff;
+    border-radius: 3%;
+}
+
+.card-container:hover{
+    transform: scale(1.1);
+    box-Shadow: 0px 0px 15px 0px;
+    cursor: pointer;
+}
+
+.image-container img{
+        margin-top: 8%;
+        margin-left: 5%;
+        float: left;
+        overflow: hidden;
+        height: 150px;
+        background-image:linear-gradient(to bottom, white, rgb(62, 52, 152));
+    
+}
+
+.name-container{
+    font-family: sans-serif;
+    color:darkslategray;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    text-transform: capitalize;
+}
+
+.types-container{
+    font-family: sans-serif;
+    color:darkslategray;
+    display: flex;
+    justify-content:space-evenly;
+    text-transform: capitalize;
+
+}
+.stat-container{
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-family: sans-serif;
+   font-size: 20px;
+   font-weight: bolder;
+   color:darkslategray;
+
+
+}
+.hp{
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+
+.attack{
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+
+.defense{
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+}
+
+.grass{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: rgb(0, 0, 0); 
+    background:rgb(185, 166, 166);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+}
+
+.poison{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(7, 134, 28);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .fire{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(255, 50, 23);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .normal{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(223, 193, 22);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .fighting{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(4, 119, 110);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .flying{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(38, 184, 176);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .ground{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(78, 69, 18);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .rock{   font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(37, 37, 37);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;}
+
+
+ .bug{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(24, 71, 42);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .ghost{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: rgb(0, 0, 0); 
+    background:rgb(122, 122, 122);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .steel{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #000000; 
+    background:rgb(136, 136, 136);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .water{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #000000; 
+    background:rgb(75, 219, 255);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .electric{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #000000; 
+    background:rgb(222, 224, 63);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .psichic{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(184, 41, 165);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .ice{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #000000; 
+    background:rgb(166, 211, 236);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .dragon{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(224, 116, 53);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .dark{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(39, 38, 38);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .fairy{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #000000; 
+    background:rgb(252, 147, 243);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .unknown{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #000000; 
+    background:rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
+ .shadow{
+    font-family: sans-serif; 
+    font-size: 20px; 
+    color: #ffffff; 
+    background:rgb(22, 16, 15);
+    border-radius: 5px;
+    text-align: center;
+    width: 25%;
+    line-height: 18px;
+ }
+
