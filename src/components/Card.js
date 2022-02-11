@@ -5,9 +5,9 @@ import HpIcon from '../image/hp.png';
 import AttackIcon from '../image/attack.png';
 import DefenseIcon from '../image/defense.png';
 
-function Card({pokemon, prueba}) {
+function Card({pokemon, details}) {
    return( 
-    <div className='card-container' onClick={()=>prueba(pokemon)} >
+    <div className='card-container' onClick={()=>details(pokemon)} >
         <div className="image-container">
             <img src={ pokemon.sprites.front_default}/>
         </div>

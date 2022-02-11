@@ -5,6 +5,8 @@ import Pokemons from "./components/Pokemons.js";
 import './components/Pokemons.css';
 import {getAllPokemon, getPokemon, getOnePokemonByName} from './services/pokemon';
 import pokedex from './image/pokedex.png';
+import Details from './components/Details'
+import imgError from './image/error.png';
 
 function App() {
     const [currentUrl, setCurrentUrl]= useState('');
@@ -96,7 +98,7 @@ const getPokemonByName = async () => {
     setLoading(false);
 }
 
-const prueba = (pokemon)=>{
+const details = (pokemon)=>{
     setSelected(pokemon);
 }
 
@@ -123,15 +125,19 @@ return (
         {prevUrl && selected===null ? <button className="btn" onClick={prev}>Prev</button> : null}
         {nextUrl && selected===null ? <button className="btn" onClick={next}>Next</button> : null}
         {selected!==null ? <button className="btn" onClick={back}>Back</button> : null}
-        {error!==null ? <h1>¡ups!</h1> : null}
+        {error!==null ? <div>
+        <img className="img-error" src={imgError}/>
+        <h1 className="error">something went wrong, please try again.</h1>
+          </div>
+         : null}
         </div>
 
     {
         loading 
         ? <h1 className="loading-container"> </h1> 
-        :  selected!==null ? <h1>{selected.name}</h1> :<Pokemons list={list} prueba={prueba}></Pokemons>
+        :  selected!==null ? 
+        <Details pokemon={selected}></Details> :<Pokemons list={list} details={details}></Pokemons>
     }
-    
 
     </div>
 );

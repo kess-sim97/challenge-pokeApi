@@ -1,3 +1,8 @@
+
+.total-container{
+    background-color: rgb(251, 215, 67);
+}
+
 .header-container{
     color: rgb(93, 185, 255);
     background-color: rgb(255, 31, 31);
@@ -54,7 +59,6 @@
         margin-top: 2%;
         
 }
-
 .btn{
     border: none;
     outline: none;
@@ -67,10 +71,6 @@
 }
 .btn:hover{
 cursor: pointer;
-}
-
-.total-container{
-    background-color: rgb(251, 215, 67);
 }
 
 .loading-container{
@@ -87,5 +87,24 @@ margin-top: 10%;
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  .error{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color:rgb(255, 31, 31);
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .img-error{
+    margin-top: 40px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 30px;
+
   }
 
