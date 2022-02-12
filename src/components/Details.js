@@ -1,5 +1,11 @@
 import React from "react";
 import './Details.css';
+import HpIcon from '../image/hp.png';
+import AttackIcon from '../image/attack.png';
+import DefenseIcon from '../image/defense.png';
+import SpeedIcon from '../image/speed.png';
+import AttackSpecialIcon from '../image/attack-special.png';
+import DefenseSpecialIcon from '../image/defense-special.png';
 
 function Details({pokemon}) {
     return( 
@@ -20,23 +26,52 @@ function Details({pokemon}) {
         
         <div className="stat">
             {
-            pokemon.stats.map(stat => {
-                return <span> { stat.stat.name}: {stat.base_stat} </span>
-            })
+                 pokemon.stats.filter(
+                    stat=> stat.stat.name==='hp'||
+                    stat.stat.name==='attack'||
+                    stat.stat.name==='defense'||
+                    stat.stat.name==='special-defense'||
+                    stat.stat.name==='special-attack'||
+                    stat.stat.name==='speed' 
+                    ).map(stat=>{
+                    return(
+                    <div>
+                        {stat.stat.name==='hp'?
+                        <img className='icon-detail' src={HpIcon} alt={stat.stat.name} title={stat.stat.name}/>
+                        : null}
+                          {stat.stat.name==='attack'?
+                        <img className='icon-detail' src={AttackIcon} alt={stat.stat.name}title={stat.stat.name}/>
+                        : null}
+                          {stat.stat.name==='defense'?
+                        <img className='icon-detail' src={DefenseIcon} alt={stat.stat.name}title={stat.stat.name}/>
+                        : null}
+                        {stat.stat.name==='special-defense'?
+                        <img className='icon-detail' src={DefenseSpecialIcon} alt={stat.stat.name} title={stat.stat.name}/>
+                        : null}
+                        {stat.stat.name==='special-attack'?
+                        <img className='icon-detail' src={AttackSpecialIcon} alt={stat.stat.name} title={stat.stat.name}/>
+                        : null}
+                        {stat.stat.name==='speed'?
+                        <img className='icon-detail' src={SpeedIcon} alt={stat.stat.name} title={stat.stat.name}/>
+                        : null}
+                        <span className='icon-detail'>{stat.base_stat}</span>
+                    </div>
+                    )
+                })
             }
         </div>
 
         <div className="ability">
-            <p>abilities:</p>
+            <p >abilities:</p>
         {pokemon.abilities.map(ability => {
-                return <p>{ability.ability.name} </p>
+                return <p className="text" >{ability.ability.name} </p>
             }) }
             
         </div>
 
         <div className="features">
-        <p> heigth: {pokemon.height/10}m</p>
-        <p> weight: {pokemon.weight/10}kg</p>
+        <p > heigth: {pokemon.height/10}m</p>
+        <p > weight: {pokemon.weight/10}kg</p>
         </div>
 
         </div>

@@ -1,6 +1,6 @@
 .details-container{
-    width:1000px;
-    height: 500px;
+    width:900px;
+    height: 450px;
     background-color: #ffffff;
     border-radius: 3%;
     box-Shadow: 0px 0px 15px 0px;
@@ -22,11 +22,9 @@
 .name{
     font-family: sans-serif;
     color:darkslategray;
-    display: inline-block;
-    margin-left: 20%;
-    margin-top: 30px;
     text-transform: capitalize;
     font-size: 25px;
+    justify-content: center;
 }
 
 .types{
@@ -35,6 +33,7 @@
     display: flex;
     justify-content:space-evenly;
     text-transform: capitalize;
+    margin-top: 0px;
 
 }
 
@@ -45,18 +44,13 @@
     font-size: 20px;
     font-weight: bolder;
     color:darkslategray;
-    display:grid;
-    text-align-last: justify;
-    margin-right: 35%;
     line-height : 40px;
-   text-transform: capitalize;
 }
 
 
 .ability{
-    margin-right: 100px;
     margin-top: -255px;
-    margin-left: 750px;
+    margin-left: 700px;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bolder;
@@ -64,11 +58,14 @@
     margin-bottom: 50px;
     text-transform: capitalize;
 }
+.text{
+   color:rgb(95, 156, 156);
+}
 
 .features{
     margin-top: 20px;
-    margin-left: 750px;
-    margin-right: 100px;
+    margin-left: 700px;
+    margin-right:70px;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bolder;
@@ -78,23 +75,12 @@
     text-transform: capitalize;
 }
 
-.hp{
+.icon-detail{
     height: 20px;
     width: 20px;
-    margin-right: 4px;
+    margin-left: 50px;
 }
 
-.attack{
-    height: 20px;
-    width: 20px;
-    margin-right: 4px;
-}
-
-.defense{
-    height: 20px;
-    width: 20px;
-    margin-right: 4px;
-}
 
 .grass{
     font-family: sans-serif; 

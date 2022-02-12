@@ -31,13 +31,13 @@ function Card({pokemon, details}) {
                     return(
                     <div>
                         {stat.stat.name==='hp'?
-                        <img className={stat.stat.name} src={HpIcon} alt={stat.stat.name} title={stat.stat.name}/>
+                        <img className='icon' src={HpIcon} alt={stat.stat.name} title={stat.stat.name}/>
                         : null}
                           {stat.stat.name==='attack'?
-                        <img className={stat.stat.name} src={AttackIcon} alt={stat.stat.name}title={stat.stat.name}/>
+                        <img className='icon' src={AttackIcon} alt={stat.stat.name}title={stat.stat.name}/>
                         : null}
                           {stat.stat.name==='defense'?
-                        <img className={stat.stat.name} src={DefenseIcon} alt={stat.stat.name}title={stat.stat.name}/>
+                        <img className='icon' src={DefenseIcon} alt={stat.stat.name}title={stat.stat.name}/>
                         : null}
                         <span className={stat.stat.name}>{stat.base_stat}</span>
                     </div>
