@@ -65,8 +65,8 @@
 .grass{
     font-family: sans-serif; 
     font-size: 20px; 
-    color: rgb(0, 0, 0); 
-    background:rgb(185, 166, 166);
+    color: rgb(255, 255, 255); 
+    background:rgb(62, 133, 59);
     border-radius: 5px;
     text-align: center;
     width: 25%;
@@ -77,7 +77,7 @@
     font-family: sans-serif; 
     font-size: 20px; 
     color: #ffffff; 
-    background:rgb(7, 134, 28);
+    background:rgb(101, 30, 134);
     border-radius: 5px;
     text-align: center;
     width: 25%;
@@ -98,8 +98,8 @@
  .normal{
     font-family: sans-serif; 
     font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(223, 193, 22);
+    color: #000000; 
+    background:rgb(192, 191, 191);
     border-radius: 5px;
     text-align: center;
     width: 25%;
