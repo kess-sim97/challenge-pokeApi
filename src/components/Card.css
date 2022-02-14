@@ -30,8 +30,9 @@
     color:darkslategray;
     display: inline-block;
     vertical-align: top;
-    margin-left: 5%;
+    margin-left: 15%;
     text-transform: capitalize;
+    margin-top: 10px;
 }
 
 .types-container{

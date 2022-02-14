@@ -4,8 +4,8 @@ import './App.css';
 import Pokemons from "./components/Pokemons.js";
 import './components/Pokemons.css';
 import {getAllPokemon, getPokemon, getOnePokemonByName} from './services/pokemon';
-import pokedex from './image/pokedex.png';
 import Details from './components/Details'
+import Header from './components/Header'
 import imgError from './image/error.png';
 
 function App() {
@@ -75,6 +75,10 @@ const loadingPokemon= async (data) => {
    setList(newList);
 };
 
+const onChange = (e) =>{
+    setName(e.target.value)
+}
+
 const getPokemonByName = async () => {
     setError(null);
     setSelected(null);
@@ -103,35 +107,18 @@ const details = (pokemon)=>{
 }
 
 return (
-   
-    <div className="total-container"> 
-       <header className="header-container">
-       <img className="logo" src={pokedex} />
-       <input 
-       className="search" 
-       type="text" 
-       placeholder="Search You Favorite Pokemon..." 
-       onKeyPress={(ev)=> {
-           if(ev.key === "Enter") {
-               ev.preventDefault();
-               getPokemonByName();
-            }}} 
-       onChange={e => setName(e.target.value)} />
-
-       <input type="button" className="ok"  onSubmit={getPokemonByName} onClick={getPokemonByName}/>
-       <h1 className="catch">¡Catch Them All!</h1>
-       </header>
+    <div>
+        <Header getPokemonByName={getPokemonByName} onChange={onChange}></Header>
         <div className="btn-container" >
-        {prevUrl && selected===null ? <button className="btn" onClick={prev}>Prev</button> : null}
-        {nextUrl && selected===null ? <button className="btn" onClick={next}>Next</button> : null}
-        {selected!==null ? <button className="btn" onClick={back}>Back</button> : null}
-        {error!==null ? <div>
-        <img className="img-error" src={imgError}/>
-        <h1 className="error">something went wrong, please try again.</h1>
-          </div>
-         : null}
-        </div>
-
+         {prevUrl && selected===null ? <button className="btn" onClick={prev}>Prev</button> : null}
+         {nextUrl && selected===null ? <button className="btn" onClick={next}>Next</button> : null}
+         {selected!==null ? <button className="btn" onClick={back}>Back</button> : null}
+         {error!==null ? <div>
+         <img className="img-error" src={imgError}/>
+         <h1 className="error">something went wrong, please try again.</h1>
+           </div>
+          : null}
+         </div>
     {
         loading 
         ? <h1 className="loading-container"> </h1> 
