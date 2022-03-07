@@ -7,6 +7,8 @@ import {getAllPokemon, getPokemon, getOnePokemonByName} from './services/pokemon
 import Details from './components/Details'
 import Header from './components/Header'
 import imgError from './image/error.png';
+import {BrowserRouter, Link, Route, Router, Routes, useNavigate } from "react-router-dom";
+
 
 function App() {
     const [currentUrl, setCurrentUrl]= useState('');
@@ -17,7 +19,7 @@ function App() {
     const [list, setList] = useState([]);
     const [selected, setSelected] = useState(null);
     const [error, setError] = useState(null);
-
+    const navigate = useNavigate();
     const initialUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=5&offset=0'
     const urlSearch = 'https://pokeapi.co/api/v2/pokemon/'
     useEffect( () => {
@@ -57,12 +59,14 @@ function App() {
 
     const back = async () => {
         setSelected(null);
-        setLoading(true);
-        let data = await getAllPokemon(currentUrl)
-        await loadingPokemon(data.results)
-        setNextUrl(data.next);
-        setPrevUrl(data.previous);
-        setLoading(false);
+        //setLoading(true);
+        //let data = await getAllPokemon(currentUrl)
+        //await loadingPokemon(data.results)
+        //setNextUrl(data.next);
+        //setPrevUrl(data.previous);
+        //setLoading(false);
+        setError(null);
+        navigate('/');
     }
 
 
@@ -81,51 +85,66 @@ const onChange = (e) =>{
 
 const getPokemonByName = async () => {
     setError(null);
-    setSelected(null);
-    setNextUrl(null);
-    setPrevUrl(null);
+    setLoading(true);
+    //setSelected(null);
+    //setNextUrl(null);
+    //setPrevUrl(null);
     if(name===''){
         fetchData();
         return;
     }
-    setLoading(true);
    
-    const newList = [];
+   
+    //const newList = [];
 
     try {
         let pokemon = await getOnePokemonByName(urlSearch+name.toLowerCase());
-        newList.push(pokemon);
+        setSelected(pokemon);
+        navigate("/"+pokemon.name);
+        //newList.push(pokemon);
     } catch (error) {
         setError(error);
     }
-    setList(newList);
+    //setList(newList);
     setLoading(false);
 }
 
 const details = (pokemon)=>{
     setSelected(pokemon);
+    navigate("/"+pokemon.name);
 }
 
 return (
     <div>
-        <Header getPokemonByName={getPokemonByName} onChange={onChange}></Header>
+        <Header 
+        getPokemonByName={getPokemonByName} 
+        onChange={onChange}>
+        </Header>
         <div className="btn-container" >
-         {prevUrl && selected===null ? <button className="btn" onClick={prev}>Prev</button> : null}
-         {nextUrl && selected===null ? <button className="btn" onClick={next}>Next</button> : null}
-         {selected!==null ? <button className="btn" onClick={back}>Back</button> : null}
-         {error!==null ? <div>
+         {prevUrl && selected===null && error===null ? <button className="btn" onClick={prev}>Prev</button> : null}
+         {nextUrl && selected===null && error===null ? <button className="btn" onClick={next}>Next</button> : null}
+         {selected!==null || error !== null ? <button className="btn" onClick={back}>Back</button> : null}
+         {
+         error!==null ? <div>
          <img className="img-error" src={imgError}/>
          <h1 className="error">something went wrong, please try again.</h1>
            </div>
-          : null}
+          : null
+          }
          </div>
-    {
+         {
         loading 
         ? <h1 className="loading-container"> </h1> 
-        :  selected!==null ? 
-        <Details pokemon={selected}></Details> :<Pokemons list={list} details={details}></Pokemons>
+        :  null
+       
     }
+    <Routes>
+        <Route path='/' element={error===null && loading===false ? <Pokemons list={list} details={details}></Pokemons> : null} >
+        </Route>
 
+        <Route path='/:name' element={error===null && loading===false ? <Details pokemon={selected}></Details> : null} >
+        </Route>
+    </Routes>
     </div>
 );
 }

@@ -7,9 +7,11 @@ import SpeedIcon from '../image/speed.png';
 import AttackSpecialIcon from '../image/attack-special.png';
 import DefenseSpecialIcon from '../image/defense-special.png';
 
-function Details({pokemon}) {
+function Details ({pokemon})  {
     return( 
+
         <div className='details-container'>
+      
           <div className="image-details">
             <img src={ pokemon.sprites.front_default}/>
         </div>
