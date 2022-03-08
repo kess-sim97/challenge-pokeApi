@@ -30,7 +30,7 @@ function App() {
         let response = await getAllPokemon(initialUrl);
         setCurrentUrl(initialUrl);
         setNextUrl(response.next);
-        setPrevUrl(response.previous);
+        // setPrevUrl(response.previous);
         await loadingPokemon(response.results);
         setLoading(false);
      }
@@ -46,16 +46,16 @@ function App() {
         setLoading(false);
     }
 
-    const prev = async () => {
-        if(!prevUrl) return;
-        setCurrentUrl(prevUrl);
-        setLoading(true);
-        let data = await getAllPokemon(prevUrl)
-        await loadingPokemon(data.results)
-        setNextUrl(data.next);
-        setPrevUrl(data.previous);
-        setLoading(false);
-    }
+    // const prev = async () => {
+    //     if(!prevUrl) return;
+    //     setCurrentUrl(prevUrl);
+    //     setLoading(true);
+    //     let data = await getAllPokemon(prevUrl)
+    //     await loadingPokemon(data.results)
+    //     setNextUrl(data.next);
+    //     setPrevUrl(data.previous);
+    //     setLoading(false);
+    // }
 
     const back = async () => {
         setSelected(null);
@@ -71,12 +71,13 @@ function App() {
 
 
 const loadingPokemon= async (data) => {
-    const newList = [];
+    const newList = list;
     await Promise.all(data.map(async pokemon => {
-        let pokemonRecord= await getPokemon(pokemon.url);
-        newList.push(pokemonRecord);
-    }));
-   setList(newList);
+      let pokemonRecord= await getPokemon(pokemon.url);
+        newList.push(pokemonRecord)
+     }));
+     setList(newList);
+   console.log(newList);
 };
 
 const onChange = (e) =>{
@@ -121,8 +122,7 @@ return (
         onChange={onChange}>
         </Header>
         <div className="btn-container" >
-         {prevUrl && selected===null && error===null ? <button className="btn" onClick={prev}>Prev</button> : null}
-         {nextUrl && selected===null && error===null ? <button className="btn" onClick={next}>Next</button> : null}
+         {/* {prevUrl && selected===null && error===null ? <button className="btn" onClick={prev}>Prev</button> : null} */}
          {selected!==null || error !== null ? <button className="btn" onClick={back}>Back</button> : null}
          {
          error!==null ? <div>
@@ -145,6 +145,9 @@ return (
         <Route path='/:name' element={error===null && loading===false ? <Details pokemon={selected}></Details> : null} >
         </Route>
     </Routes>
+    <div className="btn-container" >
+    {nextUrl && selected===null && error===null ? <button className="btn" onClick={next}>More</button> : null}
+    </div>
     </div>
 );
 }

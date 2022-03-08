@@ -8,32 +8,34 @@
     border-radius: 0 0 85% 85% / 30%;
 	overflow: hidden;
     box-shadow: 15px 15px 15px 0 #0000003b;
+    min-width :100%;
 }
 
 .logo{
-    margin-left: 80px;
-    margin-top: 25px;
+    margin-left: 5em;
+    margin-top: 1.5em;
+    
 }
 .catch{
     font-family: sans-serif;
-    font-size: 30px;
-    letter-spacing: 5px;
+    font-size: 2em;
+    letter-spacing: 5px; /* ver */
     color:rgb(62, 52, 152);
     text-align: center;
     text-shadow: 3px 3px 4px rgb(2, 1, 101)
 }
 
 .search{
-    margin-top: 80px;
-    margin-right: 150px;
-    width: 250px;
-    height: 40px;
+    margin-top: 5em;
+    margin-right: 9.4em;
+    width: 15.6em;
+    height: 2.5em;
     border: none;
     font-size: 10pt;
     float: right;
     color: #63717f;
     box-shadow: 0 3px 20px 0 #0000003b;
-    border-radius: 10px;
+    border-radius: 10px; /* ver */
      
 }
 
@@ -41,14 +43,60 @@
     background: #fff url(https://developer.mozilla.org/static/media/search.43d0e3bf.svg)  0 0 no-repeat;
     float: right;
     border: none;
-    height: 35px;
-    width: 25px;
+    height: 2em;
+    width: 1.5em;
     float: right;
-    margin-top: 85px;
-    margin-right: -240px;
+    margin-top: 5.3em;
+    margin-right: -15em;
 }
 .ok:hover{
     cursor: pointer;
     }
 
-
+    @media (max-width: 900px){
+        .logo{
+            margin-left: 5em;
+            margin-top: 1.5em;
+            width: 12em;
+        }
+        .header-container{
+            box-shadow: 10px 10px 10px 0 #0000003b;
+        }
+        .catch{
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+        .search{
+            margin-top: 3em;
+            margin-right: 5em;
+        }
+        .ok{
+            margin-top: 3.5em;
+        }
+      }
+      @media (max-width: 600px){
+        .logo{
+            width: 10em;
+            margin-top: 2em;
+            margin-block: 2em;
+            margin-left: 12em;
+        }
+        .header-container{
+            box-shadow: 10px 10px 10px 0 #0000003b;
+        }
+        .catch{
+            font-size: 1em;
+            letter-spacing: 1px;
+            margin-top: 3em;
+        }
+        .search{
+            margin-top: -1em;
+            margin-right: 13em;
+            width: 16em;
+            align-items: center;
+        }
+        .ok{
+            margin-top: -0.5em;
+            margin-right: -16em;
+        }
+      }
