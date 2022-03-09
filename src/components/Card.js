@@ -17,7 +17,7 @@ function Card({pokemon, details}) {
         <div className='types-container'>
             {
             pokemon.types.map(type => {
-                return <span className={type.type.name}>{type.type.name}</span>
+                return <span key={type.type.name} className={type.type.name}>{type.type.name}</span>
             })
             }
         </div>
@@ -29,7 +29,7 @@ function Card({pokemon, details}) {
                     stat.stat.name==='defense' 
                     ).map(stat=>{
                     return(
-                    <div>
+                    <div key={stat.stat.name}>
                         {stat.stat.name==='hp'?
                         <img className='icon' src={HpIcon} alt={stat.stat.name} title={stat.stat.name}/>
                         : null}
