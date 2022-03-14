@@ -27,16 +27,6 @@
     vertical-align: top;
 }
 
-.types-details{
-    font-family: sans-serif;
-    color:darkslategray;
-    display: flex;
-    justify-content:space-evenly;
-    text-transform: capitalize;
-    margin-top: 0px;
-
-}
-
 .stat-details{
     margin-top: 3%;
     margin-left: 45%;
@@ -46,6 +36,8 @@
     color:darkslategray;
     line-height : 40px;
 }
+
+
 .icon-detail{
    height: 1.25em;
    width: 1.25em;
@@ -83,228 +75,6 @@
     line-height : 20px;
     text-transform: capitalize;
 }
-
-
-
-
-.grass{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: rgb(255, 255, 255); 
-    background:rgb(62, 133, 59);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
-}
-
-.poison{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(126, 39, 134);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .fire{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(255, 50, 23);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .normal{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(192, 191, 191);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .fighting{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(4, 119, 110);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .flying{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(38, 184, 176);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .ground{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(78, 69, 18);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .rock{   font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(37, 37, 37);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;}
-
-
- .bug{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(24, 71, 42);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .ghost{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: rgb(0, 0, 0); 
-    background:rgb(122, 122, 122);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .steel{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(136, 136, 136);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .water{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(75, 219, 255);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .electric{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(222, 224, 63);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .psichic{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(184, 41, 165);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .ice{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(166, 211, 236);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .dragon{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(224, 116, 53);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .dark{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(39, 38, 38);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .fairy{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(252, 147, 243);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .unknown{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #000000; 
-    background:rgb(255, 255, 255);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
-
- .shadow{
-    font-family: sans-serif; 
-    font-size: 20px; 
-    color: #ffffff; 
-    background:rgb(22, 16, 15);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
- }
 
  @media (max-width: 900px){
    .details-container{
@@ -349,42 +119,44 @@
 
  @media (max-width: 600px){
    .details-container{
-      width:30em;
+      width:20em;
       height: 20em;
  }
  .image-details img{
-   height: 8em;
-   margin-top: 5em;
+   height: 6em;
+   margin-top: 3em;
 }
 
    .name-details{
-      font-size: 1em;}
+      font-size: 0.8em;
+      align-items: center;
+   }
       
    .stat-details{
-         font-size: 1em;
+         font-size: 0.8em;
      }
      .icon-detail{
-        height: 1em;
-        width: 1em;
-        margin-left: 1em;
+        height: 0.8em;
+        width: 0.8em;
+        margin-left: 0.8em;
      }
      
      .iconSpecial-detail{
-        height: 1.25em;
-        width: 1.25em;
-        margin-left: 1em;
+        height: 0.9em;
+        width: 0.9em;
+        margin-left: 0.8em;
      }
      .ability{
-         margin-top: -15.5em;
-         margin-left: 22em;
-         font-size: 1em;
+         margin-top: -18.8em;
+         margin-left: 18em;
+         font-size: 0.8em;
      }
      
      .features{
          margin-top: 1em;
-         margin-left: 22em;
-         margin-right:1em;
-         font-size: 1em;
+         margin-left: 17em;
+         margin-right: 1.5em;
+         font-size: 0.8em;
      }
      
  }

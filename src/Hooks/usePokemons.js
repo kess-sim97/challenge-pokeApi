@@ -72,9 +72,6 @@ const onChange = (e) =>{
 const getPokemonByName = async () => {
     setError(null);
     setLoading(true);
-    //setSelected(null);
-    //setNextUrl(null);
-    //setPrevUrl(null);
     if(name===''){
         fetchData();
         return;
@@ -84,11 +81,10 @@ const getPokemonByName = async () => {
         let pokemon = await getOnePokemonByName(urlSearch+name.toLowerCase());
         setSelected(pokemon);
         navigate("/"+pokemon.name);
-        //newList.push(pokemon);
+        
     } catch (error) {
         setError(error);
     }
-    //setList(newList);
     setLoading(false);
 }
 
@@ -98,20 +94,11 @@ const details = (pokemon)=>{
 }
     return {
        // aca retorna todas las variables que setea en los metodos
-       getOnePokemonByName,
-       getAllPokemon,
-       currentUrl,
-       setCurrentUrl,
        nextUrl,
-       setNextUrl,
        selected,
-       setSelected,
-       prevUrl,
        loading,
-       name, 
        list,
        error,
-       navigate,
        details,
        next,
        back,
@@ -119,5 +106,4 @@ const details = (pokemon)=>{
        onChange
       }
     }
-    
     export default usePokemons

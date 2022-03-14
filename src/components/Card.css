@@ -22,7 +22,7 @@
         margin-left: 5%;
         float: left;
         overflow: hidden;
-        height: 150px;
+        height: 9em;
         background-image:linear-gradient(to bottom, white, rgb(62, 52, 152));
     
 }
@@ -39,248 +39,183 @@
 
 .types-container{
     font-family: sans-serif;
-    color:darkslategray;
     display: flex;
     justify-content:space-evenly;
-    text-transform: capitalize;
+    text-transform: capitalize;  
+    font-size: 1.25em; 
+    line-height: 1.5em;
+    }
 
-}
 .stat-container{
     margin-top: 4%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     font-family: sans-serif;
-   font-size: 20px;
+   font-size: 1.25em;
    font-weight: bolder;
    color:darkslategray;
-
-
+   
 }
 .icon{
-    height: 20px;
-    width: 20px;
-    margin-right: 20px;
+    height: 1.25em;
+    width: 1.25em;
+    margin-right: 1.25em;
 
 }
 
-
 .grass{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: rgb(255, 255, 255); 
     background:rgb(62, 133, 59);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%; 
 }
 
 .poison{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(101, 30, 134);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .fire{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(255, 50, 23);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .normal{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #000000; 
     background:rgb(192, 191, 191);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .fighting{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(4, 119, 110);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .flying{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(38, 184, 176);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .ground{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(78, 69, 18);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
- .rock{   font-family: sans-serif; 
-    font-size: 20px; 
+ .rock{  
     color: #ffffff; 
     background:rgb(37, 37, 37);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;}
+    border-radius: 10%;
+   }
 
 
  .bug{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(24, 71, 42);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .ghost{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: rgb(0, 0, 0); 
     background:rgb(122, 122, 122);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .steel{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #000000; 
     background:rgb(136, 136, 136);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .water{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #000000; 
     background:rgb(75, 219, 255);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .electric{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #000000; 
     background:rgb(222, 224, 63);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .psichic{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(184, 41, 165);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .ice{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #000000; 
     background:rgb(166, 211, 236);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .dragon{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(224, 116, 53);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .dark{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(39, 38, 38);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
- .fairy{
-    font-family: sans-serif; 
-    font-size: 20px; 
+ .fairy{ 
     color: #000000; 
     background:rgb(252, 147, 243);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .unknown{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #000000; 
     background:rgb(255, 255, 255);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
  }
 
  .shadow{
-    font-family: sans-serif; 
-    font-size: 20px; 
     color: #ffffff; 
     background:rgb(22, 16, 15);
-    border-radius: 5px;
-    text-align: center;
-    width: 25%;
-    line-height: 18px;
+    border-radius: 10%;
+ }
+
+
+ 
+ @media (max-width: 600px){
+   .card-container{
+      width:15em;
+      height: 8em;
+      align-items: center;
+  }
+  
+  .image-container img{
+          height: 5em;
+  }
+  
+  .name-container{
+      margin-left: 10%;
+      margin-top: 10px;
+      font-size: 0.7em;
+  }
+  
+  .stat-container{
+     font-size: 0.8em;
+  }
+  .icon{
+      height: 0.8em;
+      width: 0.8em;
+      margin-right: 0.8em;
+  }
+  .types-container{
+   font-size: 1em; 
+   line-height: 0.6em;
+  }
+
  }
 

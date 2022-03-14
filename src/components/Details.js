@@ -1,5 +1,6 @@
 import React from "react";
 import './Details.css';
+import './Card.css';
 import HpIcon from '../image/hp.png';
 import AttackIcon from '../image/attack.png';
 import DefenseIcon from '../image/defense.png';
@@ -18,7 +19,7 @@ function Details ({pokemon})  {
         <div className='name-details'>
             <h1>{pokemon.name}</h1>
         </div>
-        <div className='types-details'>
+        <div className='types-container' >
             {
             pokemon.types.map(type => {
                 return <span className={type.type.name}>{type.type.name}</span>

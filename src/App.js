@@ -1,4 +1,3 @@
-
 import './App.css';
 import Pokemons from "./components/Pokemons.js";
 import './components/Pokemons.css';
@@ -10,6 +9,7 @@ import usePokemons from './Hooks/usePokemons';
 
 function App() {
     const { getPokemonByName, selected, error, next, nextUrl, back, loading, onChange, details, list} = usePokemons()
+    
 return (
     <div>
         <Header 

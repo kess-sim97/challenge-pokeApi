@@ -76,14 +76,11 @@
       }
       @media (max-width: 600px){
         .logo{
-            width: 10em;
-            margin-top: 2em;
-            margin-block: 2em;
-            margin-left: 12em;
+            margin-bottom: 2em; 
+            width: 11em;
+            align-items: center;
         }
-        .header-container{
-            box-shadow: 10px 10px 10px 0 #0000003b;
-        }
+       
         .catch{
             font-size: 1em;
             letter-spacing: 1px;
@@ -91,7 +88,6 @@
         }
         .search{
             margin-top: -1em;
-            margin-right: 13em;
             width: 16em;
             align-items: center;
         }
